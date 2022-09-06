@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type='text/css' href="../../../css/main.css">
+    <script src="https://kit.fontawesome.com/35395e1fb2.js" crossorigin="anonymous"></script>
+    <script type='text/javascript' src="../../../js/panel/escritura.js"></script>
+    <title>Panel de exámenes</title>
+</head>
+
+<body>
+    <div class="content">
+        <!-- contenido -->
+        <section id="contenido-panel-examenes">
+            <div class="wrapper">
+                <div>
+                    <div>
+                        <h1>Panel de exámenes</h1>
+                    </div>
+                    <div class="caja-box">
+                        <span class="caja-box_titulo">Nuevo exámen</span>
+                        <form class="form-nuevo-examen" action="">
+                            <p>
+                                <label for="id-nombre">ID o nombre del paciente:</label>
+                                <input type="text" id="id-nombre" name="id-nombre">
+                            </p>
+                            <p>
+                                <label for="tipo-examen">Tipo de exámen:</label>
+                                <select name="tipo-examen" id="tipo-examen">
+                                    <option value="0">Selecciona</option>
+                                    <option value="Exámen de sangre">Exámen de sangre</option>
+                                    <option value="Exámen de orina">Exámen de orina</option>
+                                    <option value="Exámen de general">Exámen de general</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="laboratorio">Laboratorio</label>
+                                <input type="text" name="laboratorio" id="laboratorio">
+                            </p>
+                            <p>
+                                <input type="submit" id="solicitar-examen" value="Solicitar examen">
+                            </p>
+                        </form>
+                    </div>
+                    <div id='busqueda-examen'>
+                        <span class="caja-box_titulo">Busqueda de exámen</span>
+                        <form class="form-busqueda-examen" action="">
+                            <p>
+                                <label for="id-nombre-examen">ID o nombre del paciente:</label>
+                                <input type="text" name="id-nombre-examen" id="id-nombre-examen">
+                            </p>
+                            <p>
+                                <label for="tipo-examen-busqueda">Tipo de exámen:</label>
+                                <input type="text" name="tipo-examen-busqueda" id="tipo-examen-busqueda">
+                            </p>
+                            <p>
+                                <input type="submit" value="Buscar">
+                            </p>
+                        </form>
+                        <hr>
+                        <div class="registro-examenes">
+                            <table class="tabla-examenes">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Paciente</th>
+                                        <th>Tipo de examen</th>
+                                        <th>Hallazgo</th>
+                                        <th>Observacion</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>001</td>
+                                        <td>Elver Guerever</td>
+                                        <td>TH4</td>
+                                        <td>172mg/dL</td>
+                                        <td>Elevado</td>
+                                    </tr>
+                                    <tr>
+                                        <td>001</td>
+                                        <td>Elver Guerever</td>
+                                        <td>TH4</td>
+                                        <td>172mg/dL</td>
+                                        <td>Elevado</td>
+                                    </tr>
+                                    <tr>
+                                        <td>001</td>
+                                        <td>Elver Guerever</td>
+                                        <td>TH4</td>
+                                        <td>172mg/dL</td>
+                                        <td>Elevado</td>
+                                    </tr>
+                                    <tr>
+                                        <td>001</td>
+                                        <td>Elver Guerever</td>
+                                        <td>TH4</td>
+                                        <td>172mg/dL</td>
+                                        <td>Elevado</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <input type="submit" value="Ver ficha de exámen" id="ver-ficha-examen">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- fin contenido -->
+</body>
+
+</html>

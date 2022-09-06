@@ -1,5 +1,5 @@
-@use 'abstracto/' as *;
-
+@use 'abstracto' as *;
+@use 'mixin' as *;
 #registro-paciente {
     height: 100%;
     padding-top: 80px;

@@ -1,6 +1,5 @@
-@use 'abstracto/' as *;
-@use 'elementos/' as *;
-
+@use 'abstracto' as *;
+@use 'mixin' as *;
 #nosotros {
     .wrapper {
         padding-top: 80px;

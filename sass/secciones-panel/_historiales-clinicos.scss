@@ -1,0 +1,84 @@
+@use '../abstracto' as *;
+@use '../elementos' as *;
+@use '../mixin' as *;
+
+#contenido-historiales-clinicos {
+  background: $color-terciario;
+  width: 100%;
+  .wrapper {
+    div {
+      div {
+        h1 {
+          @include titulo-interfaz;
+        }
+      }
+      .caja-box {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        @include caja-box;
+        .buscar-historiales {
+          @include form-panel;
+        }
+        hr {
+          width: 97%;
+          margin: auto;
+          margin-bottom: 10px;
+        }
+        .registro-historias {
+          margin-top: 20px;
+          padding: 10px 15px;
+          .tabla-historia {
+            @include tabla-registro;
+          }
+        }
+      }
+      .resumen-historia {
+        @include caja-box;
+        margin-bottom: 20px;
+        &_parcial {
+          padding: 10px 15px;
+          &_descripcion {
+            margin-bottom: 15px;
+            h4 {
+              font-family: $fuente-1;
+              margin-top: 20px;
+              &:first-child {
+                margin-top: 0;
+              }
+            }
+            p {
+              font-family: $fuente-2;
+              margin-top: 10px;
+            }
+            strong {
+              font-size: 16px;
+              font-family: $fuente-2;
+            }
+          }
+          .descargar-historia {
+            width: 200px;
+            background: rgb(232, 232, 232);
+            border-radius: 5px;
+            .form-descarga-historia {
+              @include form-panel;
+              grid-template-columns: 1fr;
+              p {
+                grid-template-columns: 1fr;
+                select {
+                  margin-left: 0px;
+                  cursor: pointer;
+                }
+              }
+              .ir-paciente {
+                @include boton-oscuro;
+                margin-top: 10px;
+                position: absolute;
+                right: 100px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

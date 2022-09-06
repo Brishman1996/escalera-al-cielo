@@ -1,6 +1,6 @@
-@use 'abstracto/' as *;
-@use 'elementos/' as *;
-
+@use 'mixin' as *;
+@use 'abstracto' as *;
+@use 'elementos' as *;
 #portada {
     height: 450px;
     padding-top: 80px;

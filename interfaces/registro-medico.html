@@ -60,62 +60,64 @@
     </header>
     <!-- fin cabecera -->
     <!-- formulario -->
-    <div id="registro-paciente">
+    <div id="registro-medico">
         <div class="wrapper">
             <h1>Registro</h1>
             <div class="tab-form">
-                <a href="#">Paciente</a>
-                <a href="/interfaces/dashboard/registro-medico.html">Médico</a>
+                <a href="/interfaces/registro-paciente.html">Paciente</a>
+                <a href="#">Médico</a>
             </div>
-            <hr>
             <form action="">
-                <div class="nombre">
+                <div>
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name='nombre'>
                 </div>
-                <div class="apellidos">
+                <div>
                     <label for="apellidos">Apellidos:</label>
                     <input type="text" id="apellidos" name='apellidos'>
                 </div>
-                <div class="fecha-nacimiento">
-                    <label for="fech-naci">Fecha de nacimiento:</label>
-                    <input type="date" id="fech-naci" name="fecha-nacimiento">
+                <div>
+                    <label fore="txtfec">Fecha de Nacimiento</label> <input type="date" name="txtfec" id="txtfec"
+                        placeholder="Ingrese su fecha de Nacimiento ">
+                </div>
+                <div>
+                    <label for="Correo">Correo Electronico:</label>
+                    <input type="text" id="correo" name='correo'>
                 </div>
                 <div class="genero">
                     <label for="masculino">Genero:</label>
                     <div>
-                        <input type="checkbox" name="masculino" id="masculino">
-                        <label for="masculino">Masculino</label>
-                        <input type="checkbox" name="femenino" id="femenino">
-                        <label for="femenino">Femenino</label>
+                        <input type="radio" name="genero" id="masculino"><label for="masculino">Masculino</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="genero" id="femenino"><label for="femenino">Femenino</label>
                     </div>
                 </div>
-                <div class="direccion">
-                    <label for="direccion">Direccion:</label>
-                    <input type="text" id="direccion" name="direccion">
-                </div>
-                <div class="estado-civil">
-                    <label for="estado-civil">Estado Civil:</label>
-                    <select id="estado-civil">
-                        <option value="no-seleccionado">- Seleccionar</option>
-                        <option value="casado">Casado</option>
-                        <option value="soltero">Soltero</option>
-                        <option value="viudo">Viudo</option>
-                        <option value="divorciado">Divorciado</option>
+                <div>
+                    <label for="especialidades">Especialidades
+                    </label>
+                    <select id="especialidades">
+                        <option value="0">seleccionar</option>
+                        <option value="1">Medicina Interna</option>
+                        <option value="2">Pediatría</option>
+                        <option value="3">Biológo</option>
+                        <option value="4">Psicólogo</option>
+                        <option value="5">Nutriología</option>
+                        <option value="6">Endocrinología</option>
                     </select>
                 </div>
-                <div class="mapa">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.434498251488!2d-76.98117701509211!3d-12.150794404766808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b8427040de97%3A0xea9cc2f9cec6abdf!2sAtocongo!5e0!3m2!1ses-419!2spe!4v1621664929895!5m2!1ses-419!2spe"
-                        width="260" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div>
+                    <label>Descripcion:</label>
+                    <textarea></textarea>
                 </div>
                 <div class="adjuntar">
-                    <label for="cloud-file">Adjuntar documento</label>
+                    <label for="cloud-file">Subir documento</label>
                     <input type="file" id="cloud" name="mi-documento">
                 </div>
                 <div class="enviar">
-                    <input type="submit" value="Enviar datos">
+                <input type="submit" value="Enviar datos">
                 </div>
+
             </form>
         </div>
     </div>
@@ -126,8 +128,8 @@
             <div class="pie-c1">
                 <h2>Escalera al Cielo</h2>
                 <p>
-                    Somos una empresa dedicada en el ambito de la salud, con mas de 20 años de experiencia.
-                    el cual tenemos como objetivo brindar apoyo, ayuda
+                    Somos una empresa dedicada en el ambito de la salud, con mas de 20 años de experiencia. 
+                    el cual tenemos como objetivo brindar apoyo, ayuda 
                     y nuestros servicios a nuestros pacientes.
                 </p>
             </div>
@@ -151,7 +153,7 @@
                 <p>(01)995423452</p>
                 <p>escaleraalcielo@hotmail.com</p>
             </div>
-        </div>
+        </div> 
         <div class="firma">
             <hr>
             <span>Todos los derechos reservados &copy; 2021 Escalera al Cielo</span>

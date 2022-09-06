@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type='text/css' href="../../../css/main.css">
+    <script src="https://kit.fontawesome.com/35395e1fb2.js" crossorigin="anonymous"></script>
+    <script type='text/javascript' src="../../../js/panel/escritura.js"></script>
+    <title>Historiales clinicos</title>
+</head>
+
+<body>
+    <div class="content">
+        <!-- contenido  -->
+        <section id="contenido-historiales-clinicos">
+            <div class="wrapper">
+                <div>
+                    <div>
+                        <h1>Historiales clinicos</h1>
+                    </div>
+                    <div class="caja-box">
+                        <span class="caja-box_titulo">Crear cita</span>
+                        <form action="" class="buscar-historiales">
+                            <p>
+                                <label for="buscar-medico">Ingresa ID o nombre:</label>
+                                <input type="text" id="buscar-historial" name="buscar-historial">
+                            </p>
+                            <p>
+                                <input type="submit" value='Buscar'>
+                            </p>
+                        </form>
+                        <hr>
+                        <div class="registro-historias">
+                            <table class="tabla-historia">
+                                <thead>
+                                    <tr>
+                                        <th>N° DNI</th>
+                                        <th>Paciente</th>
+                                        <th>Enfermedad</th>
+                                        <th>Observación</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>78789654</td>
+                                        <td>Karol Ramirez</td>
+                                        <td>Tuberculosis</td>
+                                        <td>Esta en chequeos cada semana, hay 20% de que empeore.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>40104532</td>
+                                        <td>Pedro Huaynat</td>
+                                        <td>Diabetes</td>
+                                        <td>Estado muy severo se nesecita una dieta, existe 50% de que empeore.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>60423559</td>
+                                        <td>Camila Cuyuba</td>
+                                        <td>Licobacter</td>
+                                        <td>Seguimiento algo drastico, ya que existe un 80% en tener cancer.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>90289145</td>
+                                        <td>Andrea Uriarte</td>
+                                        <td>Cancer</td>
+                                        <td>Cancer avanzado que requiere un seguimiento y chequeos estrictos</td>
+                                    </tr>
+                                    <tr>
+                                        <td>78789654</td>
+                                        <td>Karol Ramirez</td>
+                                        <td>Tuberculosis</td>
+                                        <td>Esta en chequeos cada semana, hay 20% de que empeore.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>762891</td>
+                                        <td>Josue Pariona</td>
+                                        <td>Anemia</td>
+                                        <td>Esta en seguimiento y chequeos.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="resumen-historia">
+                        <span class="caja-box_titulo">
+                            Historial de paciente
+                        </span>
+                        <div class="resumen-historia_parcial">
+                            <div class="resumen-historia_parcial_descripcion">
+                                <h4>Enfemedad actual:</h4>
+                                <p>Paciente de sexo femenino, 21 años. La enfermedad que se le diagnostico es <strong>Tuberculosis</strong>. Presenta sintomas de <strong>fiebre, perdidad de peso, escalofrios, tos, etc.</strong></p>
+                                <h4>Antecedentes de enfermedad actual:</h4>
+                                <p>La paciente relata que tuvo otras molestias como sudor, fatiga. La paciente relato haber tomado la gabapentina con la cual le quito la fatiga.</p>
+                                <h4>Antecedentes personales</h4>
+                                <p><strong>Habitos toxicos:</strong><br>
+                                Alcohol: Un poco cuando es cumpleaños <br>Tabaco: No <br>Drogas: No <br>Infuciones: No</p>
+                                <h4>Tratamiento:</h4>
+                                <p>Medicamentos: Isoniacida, Rifampicina, Etambutol, Pirazinamida.</p>
+                            </div>
+                            <div class="descargar-historia">
+                                <form action="" class="form-descarga-historia">
+                                    <p>
+                                        <input type="submit" value="Descargar Historia">
+                                    </p>
+                                    <p>
+                                        <select name="formato-descarga" id="formato-descarga">
+                                            <option value="0">Tipo de documento:</option>
+                                            <option value="pdf">PDF</option>
+                                            <option value="excel">Excel</option>
+                                            <option value="power point">Power Point</option>
+                                        </select>
+                                    </p>
+                                    <button type="submit" onclick="verperfil()" class="ir-paciente">Ver Perfil del paciente</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        function verperfil() {
+            location.href = "../paciente/perfil-paciente.html";
+        }
+    </script>
+</body>

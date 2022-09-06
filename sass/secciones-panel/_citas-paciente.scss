@@ -1,0 +1,61 @@
+@use '../abstracto' as *;
+@use '../elementos' as *;
+@use '../mixin' as *;
+#contenido-citas-paciente {
+  background: $color-terciario;
+  width: 100%;
+  .wrapper {
+    div {
+      div {
+        h1 {
+          @include titulo-interfaz;
+        }
+      }
+      .caja-box {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        @include caja-box;
+        .crear-cita {
+          @include form-panel;
+          grid-template-columns: 1fr;
+        }
+        .registro-citas {
+            margin-top: 20px;
+            padding: 10px 15px;
+          .tabla-citas {
+            border-collapse: collapse;
+            margin: 0;
+            //margin-top: 25px;
+            font-size: 0.9em;
+            width: 100%;
+            thead tr {
+              background-color: $color-primario;
+              color: #ffffff;
+              text-align: left;
+            }
+            tbody tr {
+              font-weight: 600;
+              border-bottom: 1px solid #dddddd;
+              &:nth-of-type(even) {
+                background-color: #f3f3f3;
+              }
+              &:last-of-type {
+                border-bottom: 2px solid #009879;
+              }
+              &:hover.active-row {
+                font-weight: bold;
+                color: #009879;
+                cursor: pointer;
+              }
+            }
+            th,
+            td {
+              padding: 12px 15px;
+              font-family: $fuente-1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

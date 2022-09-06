@@ -1,5 +1,5 @@
 @use 'abstracto' as *;
-
+@use 'mixin' as *;
 #pie-pagina {
     width: 100%;
     background: $color-terciario;

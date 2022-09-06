@@ -29,7 +29,7 @@
                 </nav>
                 <button id="btn-login" onmouseover="login()">Iniciar Sesion</button>
                 <div class="login">
-                    <form action="">
+                    <form action="interfaces/dashboard/paciente/perfil-paciente.html">
                         <span>Iniciar Sesión</span>
                         <hr>
                         <p>
@@ -48,11 +48,11 @@
                             <input type="checkbox" name="" id="conect-permanent">
                             <label for="conect-permanent">Permanecer conectado</label>
                         </p>
-                        <input type="submit" value="ENTRAR">
+                        <input type="submit" onclick="enviarForm()" id='enviar'  value="ENTRAR">
                         <p class="recuperar-contraseña"><a href="#">¿No recuerdas tu contraseña?</a></p>
                         <div class="link-regis">
                             <span>ó</span>
-                            <a href="/interfaces/dashboard/registro-paciente.html">Registrate</a>
+                            <a href="/interfaces/registro-paciente.html">Registrate</a>
                         </div>
                     </form>
                 </div>

@@ -1,5 +1,6 @@
-@use 'elementos/' as *;
 @use 'abstracto' as *;
+@use 'elementos' as *;
+@use 'mixin' as *;
 #cabecera {
     position: fixed;
     background: white;
@@ -20,6 +21,7 @@
                 display: flex;
                 align-items: center;
                 width: 200px;
+                width: 15%;
                 height: 100%;
                 img {
                     display: inline-block;

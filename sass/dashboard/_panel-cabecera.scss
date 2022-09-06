@@ -1,6 +1,4 @@
-@use 'abstracto/' as *;
-@use 'elementos/' as *;
-
+@use '../abstracto' as *;
 #panel-cabecera {
     width: 100%;
     height: 80px;
